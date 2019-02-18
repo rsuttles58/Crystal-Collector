@@ -7,9 +7,15 @@ body {
     font-family: wizzta;
     background-image: url("../images/morocco-blue.png");
     font-size: 32px;
+    font-weight: 900;
 }
 
 img {
     width: 200px;
     height: 200px;
+    margin: 2px;
+}
+
+.crystals {
+    font-size: 55px;
 }
