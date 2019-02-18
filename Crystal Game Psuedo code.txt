@@ -1,0 +1,13 @@
+-Four crystals with randomly generated values. ( need image files)
+-One randomly generated goal score.
+-User score starts at 0.
+-On click of a crystal, increase user's score. code-(on.("click)
+-If user's score = goal score, user wins.  If user score is over the goal score, user loses.  Otherwise, play on.
+-Crystal values are hidden to the player.
+-Game restarts when player wins or loses.  
+-Score for total wins and losses (variables) - code-.text(variables) to update scores
+-Goal score is a random number between 19 and 120 code- (Math.floor(Math.random * 101 + 19);
+-Each crystal between 1-12 (could do medium and hard mode?) code- (Math.floor(Math.random * 12 + 1);
+
+Source of Wizzta font.
+https://www.1001fonts.com/wizzta-font.html

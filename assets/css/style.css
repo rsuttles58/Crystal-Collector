@@ -1,0 +1,15 @@
+@font-face {
+    font-family: wizzta;
+    src: url("../fonts/wizzta.ttf");
+}
+
+body {
+    font-family: wizzta;
+    background-image: url("../images/morocco-blue.png");
+    font-size: 32px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
