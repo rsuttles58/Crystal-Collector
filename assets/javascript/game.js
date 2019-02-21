@@ -1,15 +1,15 @@
 $(document).ready(function () {
     //******Variables********//
     //Define base variables.  Goal, Current Score, wins, losses, and the four crystals.
-    // var displayGoal = 0;
-    var score = 0;
+
     var wins = 0;
     var losses = 0;
     var redGem = Math.floor(Math.random() * 12);
     var greenGem = Math.floor(Math.random() * 12);
     var purpleGem = Math.floor(Math.random() * 12);
     var blueGem = Math.floor(Math.random() * 12);
-    var displayGoal = $("#goal");
+    var displayGoal;
+    var market = document.getElementById("audio"); 
 
     // Math.floor();
     // Math.random();
@@ -19,7 +19,7 @@ $(document).ready(function () {
 
     //Sets score, goal, wins, and losses on load.
     $("#currentScore").text(score);
-    // $("#goal").text(displayGoal);
+    $("#goal").text(displayGoal);
     $("#wins").text(wins);
     $("#losses").text(losses);
 
@@ -29,30 +29,33 @@ $(document).ready(function () {
         score = score + redGem;
         $("#currentScore").text(score);
         console.log(redGem);
+        scoreEval();
     })
     $("#green").click(function () {
         greenGem = parseInt(greenGem);
         score = score + greenGem;
         $("#currentScore").text(score);
         console.log(greenGem);
+        scoreEval();
     })
     $("#purple").click(function () {
         purpleGem = parseInt(purpleGem);
         score = score + purpleGem;
         $("#currentScore").text(score);
         console.log(purpleGem);
+        scoreEval();
     })
     $("#blue").click(function () {
         blueGem = parseInt(blueGem);
         score = score + blueGem;
         $("#currentScore").text(score);
         console.log(blueGem);
-        scoreEval()
+        scoreEval();
     })
 
 
 })
-
+var score = 0;
 //******Functions********//
 function gemNumberGen() {
     redGem = Math.floor(Math.random() * 12);
@@ -72,14 +75,32 @@ function gameReset() {
     score = 0;
 }
 
+function loss(){
+    losses = losses + 1;
+    $("#losses").text(losses);
+}
+
+function win(){
+    wins = wins + 1;
+    $("#wins").text(wins);
+}
+
 function scoreEval() {
     if (displayGoal === score) {
         alert("You won!");
-        wins++;
+        win();
         gameReset();
     } else if (score > displayGoal) {
         alert("Sorry, you lost this time.");
-        losses++;
+        loss();
         gameReset();
     }
 }
+
+function playAudio() { 
+    market.play(); 
+  } 
+  
+  function pauseAudio() { 
+    market.pause(); 
+  } 
