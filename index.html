@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="assets/javascript/game.js"></script>
-    <audio id="myAudio">
-        <source src="assets/BusyMarketSoundEffect.wav" type="audio/mpeg">
+    <audio controls autoplay id="audio">
+        <source id="audio" src="assets/BusyMarketSoundEffect.wav" type="audio/mpeg">
       </audio>
 </head>
 
@@ -26,8 +26,7 @@
                 <p>In this game, you are trying to get the correct number of gems <b>without</b> going over. Each
                     crystal has a hidden value that will increase your total number of points. If you are able to get to
                     the total without going over, you will be the winner.</p>
-                    <button id="market" onclick="playAudio()" type="button" class="btn-large btn-secondary">Market Sounds</button>
-                    <button id="marketstop" onclick="pauseAudio()" type="button" class="btn-large btn-secondary">Pause Audio</button>
+                <p>To get the full experience of the market, click on the above audio to hear the sounds of the market.</p>
 
             </div>
             <div class="title col-6">
