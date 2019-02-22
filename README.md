@@ -1,1 +1,1 @@
-# unit-4-game
+This is a first approach to completing the Crystal Collectors game with an attempt at recreating the flair of a middle eastern market.  In Istanbul, the Grand Bazaar was a glorious place of colors, smells, bargains, and haggling.  I hope you enjoy the game which is built using Javascript, HTML, and CSS.
