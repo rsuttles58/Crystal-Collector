@@ -1,6 +1,9 @@
 # Crystal Collector
 This is a first approach to completing the Crystal Collectors game with an attempt at recreating the flair of a middle eastern market. In Istanbul, the Grand Bazaar was a glorious place of colors, smells, bargains, and haggling. I hope you enjoy the game which is built using Javascript, HTML, and CSS.
 
+## Project Link
+[Crystal Collector Deployed Project](https://rsuttles58.github.io/Crystal-Collector/)
+
 ## How to Play
 
 In this game, you are trying to get the correct number of gems <b>without</b> going over. Each
